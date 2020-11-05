@@ -13,10 +13,8 @@ func printComputerPick(_ computerPick : Int) {
         print("컴퓨터 : 가위")
     case 2:
         print("컴퓨터 : 바위")
-    case 3:
-        print("컴퓨터 : 보")
     default:
-        print("1...3이 아닌 다른값이 들어올 경우가 있을까??")
+        print("컴퓨터 : 보")
     }
 }
 
@@ -37,13 +35,13 @@ func rockPaperScissors() {
     case "2" :
         print("사용자 : 바위")
         printComputerPick(computerPick)
-    case "3" :
+    default:
         print("사용자 : 보")
         printComputerPick(computerPick)
-    default:
-        print("잘못된 입력입니다. 다시 시도해 주세요.")
-        rockPaperScissors()
     }
 }
 
 rockPaperScissors()
+
+// 두번째 pr 테스트!
+// 세번째 pr 테스트!
